@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Japonia projekt</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Japonia w pigułce</h1>
+        <p><b>Filmy</b></p>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="HomePage.html">Strona Główna</a>
+        <a href="AlbumPage.html">Zdjęcia</a>
+        <a class="current" href="MoviePage.html">Filmy</a>
+        <a href="AudioPage.html">Audio</a>
+        <a href="LearnPage.html">Nauka</a>
+        <a href="CulturePage.html">Kultura</a>
+    </div>
+    <div class="row">
+        <div class="columnMovie" onclick="openTab('b1');" style="background-color: rgb(17, 63, 48);">Wideo: Ciekawostki</div>
+        <div class="columnMovie" onclick="openTab('b2');" style="background-color: rgb(53, 9, 9);">Wideo: Blogi</div>
+        <div class="columnMovie" onclick="openTab('b3');" style="background-color: rgb(13, 14, 75);">Wideo: Nauka</div>
+    </div>
+    <div id="b1" class="containerTab" style="background:rgb(193, 255, 234)">
+        <h2 class="movieHeader">1. Japan's "Last Ninja" Explains The Naruto Run</h2>
+        <p class="movieText">wideo od: <a href="https://www.youtube.com/channel/UC2-_WWPT_124iN6jiym4fOw" target="_blank">Asian Boss</a></p>
+        <iframe class="video" width="800" height="600" src="https://www.youtube.com/embed/Sk8POUhLwM8"></iframe>
+
+        <h2 class="movieHeader">2. 12 Things NOT to do in Japan</h2>
+        <p class="movieText">wideo od: <a href="https://www.youtube.com/channel/UCHL9bfHTxCMi-7vfxQ-AYtg" target="_blank">Abroad in Japan</a></p>
+        <iframe class="video" width="800" height="600" src="https://www.youtube.com/embed/0GCuvcTI090"></iframe>
+    </div>
+
+    <div id="b2" class="containerTab" style="display:none;background:rgb(255, 193, 193)">
+        <h2 class="movieHeader">1. all about the 👏R E S P E C T👏 in Japan..🗾</h2>
+        <p class="movieText">wideo od: <a href="https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw" target="_blank">PewDiePie</a></p>
+        <iframe class="video" width="800" height="600" src="https://www.youtube.com/embed/zTW9GjBW6ho"></iframe>
+
+        <h2 class="movieHeader">2. LAS SAMOBÓJCÓW</h2>
+        <p class="movieText">wideo od: <a href="https://www.youtube.com/channel/UCzuvRWjh7k1SZm1RvqvIx4w" target="_blank">Krzysztof Gonciarz</a></p>
+        <iframe class="video" width="800" height="600" src="https://www.youtube.com/embed/aWwcYpPm9w4"></iframe>
+    </div>
+
+    <div id="b3" class="containerTab" style="display:none;background:rgb(197, 193, 255)">
+        <h2 class="movieHeader">1. Nauka Japońskiego od zera #1 (KATAKANA - pierwsze znaki alfabetu)</h2>
+        <p class="movieText">wideo od: <a href="https://www.youtube.com/channel/UCuSng088Kn2UIajT8_5c7yg" target="_blank">Turpat</a></p>
+        <iframe class="video" width="800" height="600" src="https://www.youtube.com/embed/VXjYQc60vyo"></iframe>
+
+        <h2 class="movieHeader">2. Nauka Japońskiego od zera #2 (KATAKANA - pozostałe znaki podstawowe)</h2>
+        <p class="movieText">wideo od: <a href="https://www.youtube.com/channel/UCuSng088Kn2UIajT8_5c7yg" target="_blank">Turpat</a></p>
+        <iframe class="video" width="800" height="600" src="https://www.youtube.com/embed/l1v1QIaGfAY"></iframe>
+    </div>
+
+    <footer class="footer">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <p><b>wykonanie:</b> Szymon Ruszkiewicz</p>
+    </footer>
+    <script src="SlideNavbar.js"></script>
+    <script src="PopVideo.js"></script>
+</body>
+</html>

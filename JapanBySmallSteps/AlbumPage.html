@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Japonia projekt</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Japonia w pigułce</h1>
+        <p><b>Zdjęcia</b></p>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="HomePage.html">Strona Główna</a>
+        <a class="current" href="AlbumPage.html">Zdjęcia</a>
+        <a href="MoviePage.html">Filmy</a>
+        <a href="AudioPage.html">Audio</a>
+        <a href="LearnPage.html">Nauka</a>
+        <a href="CulturePage.html">Kultura</a>
+    </div>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Pokaż wszystkie</button>
+        <button class="btn" onclick="filterSelection('nature')">Natura</button>
+        <button class="btn" onclick="filterSelection('cities')">Miasta</button>
+        <button class="btn" onclick="filterSelection('people')">Ludzie</button>
+    </div>
+    <div class="rowPhoto">
+        <div class="column nature">
+            <div class="content">
+                <img src="Photos/240px-FujiSunriseKawaguchiko2025WP.jpg" alt="Mountains" style="width:100%" />
+                <h4>Fudżi</h4>
+                <p>czynny stratowulkan i zarazem najwyższy szczyt Japonii. Leży na wyspie Honsiu, na południowy zachód od stolicy, Tokio.</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="Photos/Bambusowy-las-Sagano-Japonia-14.jpg" alt="Forest" style="width:100%" />
+                <h4>Las Bambusowy</h4>
+                <p>Miejsce Pełne spokoju i wysokich łodyg bambusa. Kiedy świeci słońce i jest łagodny wiatr powoduje, że drzewa kołyszą się delikatnie co wygląda bardzo malowniczo.</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="Photos/sea-268971_960_720.jpg" alt="See" style="width:100%" />
+                <h4>Morze japońskie</h4>
+                <p>Morze Japońskie jest morzem przybrzeżnym zachodniego Oceanu Spokojnego, otoczonym przez japońskie wyspy Hokkaido, Honsiu i Kiusiu oraz wyspę Sachalin od wschodu, a przez Półwysep Koreański i Rosję od zachodu.</p>
+            </div>
+        </div>
+        
+        <div class="column cities">
+            <div class="content">
+                <img src="Photos/General-Tokyo-skyline-Notes-of-Nomads.jpg" alt="City" style="width:100%" />
+                <h4>Tokyo</h4>
+                <p>stolica i największe miasto Japonii, położone na południowo-wschodnim wybrzeżu Honsiu i zarazem największy obszar metropolitalny na świecie na poziomie 38 305 000 mieszkańców.</p>
+            </div>
+        </div>
+        <div class="column cities">
+            <div class="content">
+                <img src="Photos/osaka-2-day-itinerary-osaka-castle-and-kitahama-rea-XL.jpg" alt="City" style="width:100%" />
+                <h4>Osaka</h4>
+                <p>trzecie co do wielkości miasto w Japonii. Leży w południowo-zachodniej części wyspy Honsiu, w regionie Kinki, nad zatoką Osaka na styku Morza Wewnętrznego i Oceanu Spokojnego, u ujścia rzeki Yodo.</p>
+            </div>
+        </div>
+        <div class="column cities">
+            <div class="content">
+                <img src="Photos/Kioto-co-warto-zobaczyc.jpg" alt="City" style="width:100%" />
+                <h4>Kioto</h4>
+                <p>miasto w zachodniej części japońskiej wyspy Honsiu, stolica prefektury Kioto, dawna stolica Japonii i siedziba cesarza. Kioto jest częścią obszaru metropolitalnego Keihanshin zamieszkiwanego przez ok. 18 mln osób.</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="Photos/Toshiko5.jpg" alt="People" style="width:100%" />
+                <h4>Akiyoshi Toshiko</h4>
+                <p>japońska pianistka, kompozytorka, aranżerka i bandliderka jazzowa. Jest pierwszą kobietą, która w dorocznym plebiscycie czytelników prestiżowego miesięcznika „Down Beat” zajęła w 1977 pierwsze miejsce w kategorii „Aranżer”, powtarzając to osiągnięcie przez kolejnych sześć lat.</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="Photos/ls3818_50_sup_ryunosuke23_akutagawa_02-2.jpg" alt="People" style="width:100%" />
+                <h4>Akutagawa Ryu-nosuke</h4>
+                <p>Ryūnosuke Akutagawa – japoński pisarz i poeta. Jest nazywany „ojcem japońskich opowiadań”.</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="Photos/A-1021041-1215608341.gif.jpg" alt="People" style="width:100%" />
+                <h4>Akutagawa Yasushi</h4>
+                <p>japoński kompozytor. Był trzecim synem pisarza Ryūnosuke Akutagawy. Studiował w latach 1943–1949 w wyższej szkole muzycznej w Tokio, ucząc się kompozycji, dyrygentury i gry na fortepianie.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footerAlbum">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <p><b>wykonanie:</b> Szymon Ruszkiewicz</p>
+    </div>
+    <script src="AlbumScript.js"></script>
+    <script src="SlideNavbar.js"></script>
+</body>
+</html>
